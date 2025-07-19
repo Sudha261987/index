@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Full Stack Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: hsl(0, 86%, 62%);
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .about-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .card-text {
+      font-size: 25px;
+      color: #555;
+      align-items: right;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>About Me</h1>
+
+  <div class="about-container">
+
+    <!-- Profile Card -->
+    <div class="card">
+      <img src="sudhasakthi.jpeg" alt="Developer" height="300px" width="300px"/>
+      <div class="card-title">Hi, I'm Muthu Lakshmi</div>
+      <div class="card-text">A passionate Full Stack Developer with experience in building web applications using HTML, CSS, JavaScript, React, Node.js, and MongoDB.</div>
+    </div>
+
+    <!-- Skills Card -->
+    <div class="card">
+      <div class="card-title">Frontend Skills</div>
+      <div class="card-text">
+        - HTML5<br>
+        - CSS3 / Tailwind<br>
+        - JavaScript / React<br>
+        - Responsive Design<br>
+      </div>
+    </div>
+
+    <!-- Backend Skills Card -->
+    <div class="card">
+      <div class="card-title">Backend Skills</div>
+      <div class="card-text">
+        - Node.js / Express<br>
+        - MongoDB / MySQL<br>
+        
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
